@@ -1,14 +1,24 @@
 import './App.scss'
-
+import React, { useState } from 'react'
 import Navbar from 'components/Navbar/Navbar'
 import Presentation from 'components/Presentation/Presentation'
+import Bubbles from 'components/Bubbles/Bubbles'
+import ThemeContext from 'layout/themeContext'
 
 function App() {
+    const [themeLight, setThemeLight] = useState(false)
+
     return (
-        <div className="wrapper">
-            <Navbar></Navbar>
-            <Presentation></Presentation>
-        </div>
+        <ThemeContext.Provider value={{ themeLight, setThemeLight }}>
+            {/* <div> theme is {`${themeLight ? '' : 'not'} themeLight`} </div> */}
+            <div id="birds" className="birds">
+                <Bubbles />
+            </div>
+            <div className="wrapper">
+                <Navbar></Navbar>
+                <Presentation></Presentation>
+            </div>
+        </ThemeContext.Provider>
     )
 }
 
