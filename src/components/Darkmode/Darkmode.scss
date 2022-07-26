@@ -1,0 +1,75 @@
+/* Custom Dark Mode Toggle Element */
+
+.toggle-theme-wrapper {
+    margin: 0 15px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.toggle-theme-wrapper span {
+    font-size: 28px;
+    margin: 0 4px;
+}
+
+.toggle-theme {
+    position: relative;
+    display: inline-block;
+    height: 23px;
+    width: 45px;
+}
+
+.toggle-theme input {
+    display: none;
+}
+
+.slider {
+    background-color: var(--font-color);
+    position: absolute;
+    cursor: pointer;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    top: 0;
+    transition: 0.2s;
+}
+
+.slider:before {
+    background-color: var(--background-color);
+    bottom: 4px;
+    content: '';
+    height: 15px;
+    left: 5px;
+    position: absolute;
+    transition: 0.4s;
+    width: 15px;
+}
+
+input:checked + .slider:before {
+    transform: translateX(21px);
+}
+
+input:checked + .slider {
+    background-color: var(--font-color);
+}
+
+.slider.round {
+    border-radius: 24px;
+}
+
+.slider.round:before {
+    border-radius: 50%;
+}
+
+.toggle {
+    position: relative;
+    width: 14px;
+    height: 14px;
+
+    .icon-dark {
+        position: absolute;
+    }
+    .icon-light {
+        position: absolute;
+    }
+}
