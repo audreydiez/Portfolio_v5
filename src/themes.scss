@@ -1,5 +1,5 @@
 :root {
-    --font-color: #333;
+    --font-color: #222;
     --background-color: #eee;
     --background-menu-mobile: #e5e3e3;
     --link-color: #272525;
@@ -12,6 +12,7 @@
     --svg-ad-color: #333;
     --color-basic: #000;
     --presentation-bg-color: #f8f9fc;
+    --navbar-bg-color: rgba(255, 255, 255, 0.5);
 }
 
 [data-theme='dark'] {
@@ -28,4 +29,5 @@
     --svg-ad-color: #eee;
     --color-basic: #fff;
     --presentation-bg-color: #000000;
+    --navbar-bg-color: rgba(255, 255, 255, 0.06);
 }

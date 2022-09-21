@@ -1,20 +1,18 @@
 .presentation {
     box-sizing: border-box;
-    padding: 0 5% 0 5%;
     width: 100%;
     height: calc(100vh - 100px);
-
-    margin-top: -12%;
 
     display: flex;
     flex-direction: column;
     flex-wrap: nowrap;
 
-    justify-content: center;
+    align-items: center;
 
-    color: var(--color-basic);
+    color: var(--font-color);
 
     &__bloc {
+        width: 80%;
         padding: 40px 40px;
         /* background-color: rgba($color: #000000, $alpha: 0.4); */
         border-radius: 0 75px 0 0;
@@ -25,36 +23,60 @@
         backdrop-filter: blur(5.3px);
         -webkit-backdrop-filter: blur(5.3px);
 
-        @media screen and(max-width: 550px) {
-            padding: 0;
-            background-color: inherit;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+
+        text-align: center;
+
+        &__text {
+            width: 60%;
+            text-align: left;
+
+            .above {
+                text-transform: uppercase;
+                font-size: 1.2rem;
+                letter-spacing: 3px;
+                opacity: 0.8;
+                margin-bottom: 1rem;
+            }
+
+            .web {
+                display: block;
+                font-size: 2.6rem;
+                font-weight: 700;
+                margin: 20px 0;
+                background: linear-gradient(
+                    to top left,
+                    var(--link-gradient-1-color) 0%,
+                    var(--link-gradient-2-color) 100%
+                );
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+
+                line-height: 3rem;
+            }
+            .name {
+                font-size: 3rem;
+                font-weight: 700;
+            }
+            .small {
+                font-size: 2rem;
+            }
         }
-    }
-
-    &__bloc > p {
-        margin: 5px 0 5px 30px;
-        font-size: 1.4rem;
-
-        @media screen and(max-width: 542px) {
-            font-size: 1.2rem;
-        }
-    }
-
-    &__bloc > h1 {
-        font-size: 4.2rem;
-        font-weight: bold;
-        margin: 0 0 15px 0;
-
-        @media screen and(max-width: 768px) {
-            font-size: 4.2rem;
-        }
-
-        @media screen and(max-width: 542px) {
-            font-size: 3.2rem;
-        }
-
-        @media screen and(max-width: 370px) {
-            font-size: 2.8rem;
+        &__img {
+            width: 40%;
+            &__circle {
+                width: 200px;
+                height: 200px;
+                border-radius: 50%;
+                background-color: white;
+                img {
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                }
+            }
         }
     }
 }

@@ -11,6 +11,8 @@
 
     align-items: center;
 
+    background-color: var(--navbar-bg-color);
+
     @media screen and(max-width: 768px) {
         justify-content: space-between;
     }
@@ -81,7 +83,6 @@
         }
         // Hover simple
         &:hover .line {
-            background-color: var(--link-gradient-1-color);
             background-color: var(--link-gradient-1-color);
             box-shadow: 0 30px 30px -30px var(--link-gradient-2-color) inset;
         }
