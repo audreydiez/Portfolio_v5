@@ -131,6 +131,7 @@
 
 .navbar__mobile {
     position: fixed;
+    z-index: 2;
     top: 100px;
     left: 0;
     bottom: 0;

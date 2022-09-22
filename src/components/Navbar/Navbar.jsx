@@ -20,10 +20,20 @@ const Navbar = () => {
                         </a>
                     </li>
                     <li className="navbar__links__list">
+                        <a className="a-navbar a-navbar-effect" href="#works">
+                            Méthodes
+                        </a>
+                    </li>
+                    <li className="navbar__links__list">
                         <a className="a-navbar a-navbar-effect" href="#about">
                             Réalisations
                         </a>
                     </li>
+                    {/* <li className="navbar__links__list">
+                        <a className="a-navbar a-navbar-effect" href="#contact">
+                            Blog
+                        </a>
+                    </li> */}
                     <li className="navbar__links__list">
                         <a className="a-navbar a-navbar-effect" href="#contact">
                             Contact
@@ -56,14 +66,21 @@ const Navbar = () => {
                         <a
                             href="#works"
                             className="navbar__mobile__inner__list__gradient a-navbar a-navbar-effect">
-                            Réalisations
+                            Services
+                        </a>
+                    </li>
+                    <li className="navbar__mobile__inner__list">
+                        <a
+                            href="#works"
+                            className="navbar__mobile__inner__list__gradient a-navbar a-navbar-effect">
+                            Méthodes
                         </a>
                     </li>
                     <li className="navbar__mobile__inner__list">
                         <a
                             href="#about"
                             className="navbar__mobile__inner__list__gradient a-navbar a-navbar-effect">
-                            Compétences
+                            Réalisations
                         </a>
                     </li>
                     <li className="navbar__mobile__inner__list">

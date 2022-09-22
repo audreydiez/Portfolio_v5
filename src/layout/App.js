@@ -5,6 +5,7 @@ import Presentation from 'components/Presentation/Presentation'
 //import Bubbles from 'components/Bubbles/Bubbles'
 import ThemeContext from 'layout/themeContext'
 import Services from 'components/Services/Services'
+import Methods from 'components/Methods/Methods'
 
 function App() {
     const [themeLight, setThemeLight] = useState(false)
@@ -19,6 +20,7 @@ function App() {
                 <Navbar></Navbar>
                 <Presentation></Presentation>
                 <Services />
+                <Methods />
             </div>
         </ThemeContext.Provider>
     )

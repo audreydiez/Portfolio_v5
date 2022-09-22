@@ -13,6 +13,7 @@
     --color-basic: #000;
     --presentation-bg-color: #f8f9fc;
     --navbar-bg-color: rgba(255, 255, 255, 0.5);
+    --invert-smooth-color: #f6f6f6;
 }
 
 [data-theme='dark'] {
@@ -30,4 +31,5 @@
     --color-basic: #fff;
     --presentation-bg-color: #000000;
     --navbar-bg-color: rgba(255, 255, 255, 0.06);
+    --invert-smooth-color: #343434;
 }
