@@ -11,17 +11,19 @@
 
     color: var(--font-color);
 
+    margin-top: 5rem;
+
     &__bloc {
         width: 80%;
-        padding: 40px 40px;
+        padding: 60px 40px;
         /* background-color: rgba($color: #000000, $alpha: 0.4); */
         border-radius: 0 75px 0 0;
 
-        background: rgba(255, 255, 255, 0.2);
+        background: rgba(255, 255, 255, 0.1);
         border-radius: 16px;
         box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-        backdrop-filter: blur(5.3px);
-        -webkit-backdrop-filter: blur(5.3px);
+        backdrop-filter: blur(3px);
+        -webkit-backdrop-filter: blur(3px);
 
         display: flex;
         flex-direction: row;
@@ -29,9 +31,28 @@
 
         text-align: center;
 
+        @media screen and(max-width: 992px) {
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        @media screen and(max-width: 550px) {
+            padding: 60px 10px;
+        }
+
         &__text {
             width: 60%;
             text-align: left;
+
+            @media screen and(max-width: 1100px) {
+                margin-left: 2rem;
+            }
+
+            @media screen and(max-width: 992px) {
+                width: 100%;
+                text-align: center;
+                margin-top: 4rem;
+            }
 
             .above {
                 text-transform: uppercase;
@@ -39,6 +60,10 @@
                 letter-spacing: 3px;
                 opacity: 0.8;
                 margin-bottom: 1rem;
+
+                @media screen and(max-width: 1100px) {
+                    font-size: 1rem;
+                }
             }
 
             .web {
@@ -55,22 +80,77 @@
                 -webkit-text-fill-color: transparent;
 
                 line-height: 3rem;
+
+                @media screen and(max-width: 1100px) {
+                    font-size: 2rem;
+                }
+                @media screen and(max-width: 550px) {
+                    font-size: 1.6rem;
+                    margin: 20px 0 0 0;
+                }
+                @media screen and(max-width: 445px) {
+                    font-size: 1.4rem;
+                }
+                @media screen and(max-width: 320px) {
+                    font-size: 1rem;
+                    line-height: 2rem;
+                }
             }
             .name {
                 font-size: 3rem;
                 font-weight: 700;
+                @media screen and(max-width: 445px) {
+                    font-size: 2rem;
+                }
             }
             .small {
                 font-size: 2rem;
+                background: linear-gradient(
+                    to top left,
+                    var(--link-gradient-1-color) 0%,
+                    var(--link-gradient-2-color) 100%
+                );
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+
+                @media screen and(max-width: 550px) {
+                    font-size: 1.6rem;
+                }
+                @media screen and(max-width: 445px) {
+                    font-size: 1.4rem;
+                }
+                @media screen and(max-width: 320px) {
+                    font-size: 1rem;
+                }
             }
         }
         &__img {
             width: 40%;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: nowrap;
+
+            align-items: center;
+            justify-content: center;
+
+            @media screen and(max-width: 992px) {
+                width: 100%;
+            }
+
             &__circle {
-                width: 200px;
-                height: 200px;
+                width: 250px;
+                height: 250px;
                 border-radius: 50%;
                 background-color: white;
+                border: 6px solid var(--navbar-bg-color);
+                overflow: hidden;
+                box-shadow: 0 4px 30px rgba(0, 0, 0, 0.2);
+
+                @media screen and(max-width: 550px) {
+                    width: 180px;
+                    height: 180px;
+                }
+
                 img {
                     width: 100%;
                     height: 100%;

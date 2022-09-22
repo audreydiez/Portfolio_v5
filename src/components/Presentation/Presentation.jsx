@@ -15,13 +15,13 @@ const Presentation = () => {
                     <div className="above">Développeuse VueJS, React & Wordpress</div>
                     <p className="above">Montpellier - Nîmes</p>
                     <h1 className="sub-title">
-                        <span className="name">{Photo}Audrey Diez</span>
+                        <span className="name">Audrey Diez</span>
                         <br />
                         <span className="web">
                             Création d'applications <br />
-                            et de sites internet.
+                            et de sites internet
                         </span>
-                        <span className="small">Mentor & formatrice.</span>
+                        <span className="small">Mentor & formatrice</span>
                     </h1>
                 </div>
             </div>
