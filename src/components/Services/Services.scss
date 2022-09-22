@@ -1,0 +1,74 @@
+.services {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    width: 80%;
+    padding: 60px 40px;
+    margin: auto;
+
+    text-align: center;
+
+    &__h2 {
+        font-size: 2.4rem;
+        font-weight: 700;
+        margin-bottom: 2rem;
+        padding: 0;
+    }
+    &__p {
+        width: 60%;
+        font-size: 1.2rem;
+        font-weight: 300;
+        line-height: 2rem;
+        margin: 0.2rem 0;
+    }
+    &__container {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        gap: 2rem;
+        margin-top: 4rem;
+        &__card {
+            width: calc(33.33333% - 2rem);
+            height: 280px;
+            background-color: rgba(255, 255, 255, 0.2);
+            border-radius: 16px;
+            box-shadow: 0 4px 30px rgba(0, 0, 0, 0.05);
+            backdrop-filter: blur(3px);
+            -webkit-backdrop-filter: blur(3px);
+            padding: 1.5rem 0;
+            transition: all 300ms ease-in-out;
+            cursor: pointer;
+
+            &:hover {
+                box-shadow: 0 4px 30px rgba(0, 0, 0, 0.2);
+                transform: translateY(-5px);
+            }
+
+            &__icon {
+                width: 70px;
+                height: auto;
+                margin: 1rem;
+                stroke: url(#gradient);
+            }
+            .wordpress-icon {
+                fill: #000;
+            }
+            &__h3 {
+                font-size: 1.6rem;
+                font-weight: 700;
+                margin: 0 1rem;
+            }
+            &__descr {
+                margin: 1rem 1.5rem 0 1.5rem;
+                font-weight: 300;
+                font-size: 1.1rem;
+                line-height: 1.5rem;
+            }
+        }
+    }
+}

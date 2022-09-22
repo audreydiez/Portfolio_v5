@@ -16,12 +16,12 @@ const Navbar = () => {
                 <ul className="navbar__links">
                     <li className="navbar__links__list">
                         <a className="a-navbar a-navbar-effect" href="#works">
-                            Réalisations
+                            Services
                         </a>
                     </li>
                     <li className="navbar__links__list">
                         <a className="a-navbar a-navbar-effect" href="#about">
-                            Compétences
+                            Réalisations
                         </a>
                     </li>
                     <li className="navbar__links__list">

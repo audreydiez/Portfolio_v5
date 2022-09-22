@@ -1,7 +1,7 @@
 .presentation {
     box-sizing: border-box;
     width: 100%;
-    height: calc(100vh - 100px);
+    height: auto;
 
     display: flex;
     flex-direction: column;
@@ -17,7 +17,6 @@
         width: 80%;
         padding: 60px 40px;
         /* background-color: rgba($color: #000000, $alpha: 0.4); */
-        border-radius: 0 75px 0 0;
 
         background: rgba(255, 255, 255, 0.1);
         border-radius: 16px;
