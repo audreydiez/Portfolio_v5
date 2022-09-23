@@ -6,6 +6,7 @@ import Presentation from 'components/Presentation/Presentation'
 import ThemeContext from 'layout/themeContext'
 import Services from 'components/Services/Services'
 import Methods from 'components/Methods/Methods'
+import Portfolio from 'components/Portfolio/Portfolio'
 
 function App() {
     const [themeLight, setThemeLight] = useState(false)
@@ -21,6 +22,7 @@ function App() {
                 <Presentation></Presentation>
                 <Services />
                 <Methods />
+                <Portfolio />
             </div>
         </ThemeContext.Provider>
     )
