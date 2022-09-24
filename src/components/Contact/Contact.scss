@@ -11,4 +11,38 @@
         padding: 0;
         text-align: center;
     }
+
+    &__container {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        text-align: center;
+
+        gap: 2rem;
+
+        &__card {
+            flex: 1;
+
+            &:nth-child(1) .social {
+                display: flex;
+                flex-direction: row;
+                flex-wrap: wrap;
+                justify-content: center;
+                text-align: center;
+                gap: 2rem;
+                .icon {
+                    width: 80px;
+                    height: 80px;
+                }
+            }
+
+            &__descr {
+                font-weight: 300;
+                font-size: 1.3rem;
+                line-height: 1.8rem;
+                margin-bottom: 1rem;
+            }
+        }
+    }
 }
