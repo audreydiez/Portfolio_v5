@@ -80,5 +80,18 @@ export const Projects = [
         date: '2020',
         client: 'Inovshop Group',
         behance: 'https://www.behance.net/gallery/132758611/Orange-Infographie'
+    },
+    {
+        title01: 'Orange',
+        title02: 'Infographie',
+        name: 'Orange - Statistiques',
+        category: ['all', 'webapp'],
+        thumbnail: 'images/Orange.png',
+        pictures: ['images/Orange.png'],
+        specs: 'Illustration, Data analytics',
+        tools: 'Illustrator, Indesign',
+        date: '2020',
+        client: 'Inovshop Group',
+        behance: 'https://www.behance.net/gallery/132758611/Orange-Infographie'
     }
 ]

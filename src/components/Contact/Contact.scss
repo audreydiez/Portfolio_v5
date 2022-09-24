@@ -1,0 +1,14 @@
+.contact {
+    background-color: var(--invert-smooth-color);
+    width: calc(100% - 80px);
+    margin: 2rem 0;
+    padding: 2rem 40px 6rem 40px;
+
+    &__h2 {
+        font-size: 2.4rem;
+        font-weight: 700;
+        margin-bottom: 4rem;
+        padding: 0;
+        text-align: center;
+    }
+}
