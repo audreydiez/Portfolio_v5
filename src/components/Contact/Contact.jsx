@@ -19,7 +19,7 @@ const Contact = () => {
                         </div>
                     </article>
                     <article className="contact__container__card">
-                        <h3 className="contact__container__card">Par email</h3>
+                        <h3 className="contact__container__card__title">Par email</h3>
                         <a
                             href="mailto:audrey.diez@gmail.com"
                             className="contact__container__card__descr">
@@ -27,7 +27,7 @@ const Contact = () => {
                         </a>
                     </article>
                     <article className="contact__container__card">
-                        <h3 className="contact__container__card">Un café ?</h3>
+                        <h3 className="contact__container__card__title">Un café ?</h3>
                         <p className="contact__container__card__descr">
                             Rencontrons nous sur Montpellier, Nîmes <br />
                             ou à mi-chemin !
