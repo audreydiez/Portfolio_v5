@@ -8,6 +8,8 @@ import Services from 'components/Services/Services'
 import Methods from 'components/Methods/Methods'
 import Portfolio from 'components/Portfolio/Portfolio'
 import Contact from 'components/Contact/Contact'
+import Network from 'components/Network/Network'
+import Footer from 'components/Footer/Footer'
 
 function App() {
     const [themeLight, setThemeLight] = useState(false)
@@ -21,10 +23,12 @@ function App() {
             <div className="wrapper">
                 <Navbar></Navbar>
                 <Presentation></Presentation>
+                <Network />
                 <Services />
                 <Methods />
                 <Portfolio />
                 <Contact />
+                <Footer />
             </div>
         </ThemeContext.Provider>
     )

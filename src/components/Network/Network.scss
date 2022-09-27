@@ -1,0 +1,38 @@
+.network {
+    width: calc(100% - 80px);
+    margin: 3rem 0 0 0;
+    padding: 2rem 40px 0 40px;
+    text-align: center;
+
+    &__container {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: center;
+        text-align: center;
+
+        gap: 4rem;
+
+        width: 100%;
+
+        .icon {
+            width: 90px;
+            height: 90px;
+            display: inline-block;
+            background-size: cover;
+            transition: all 300ms;
+            fill: var(--font-color);
+            cursor: pointer;
+
+            &:hover {
+                fill: url(#gradient);
+            }
+        }
+    }
+    &__p {
+        margin: 3rem 0 1rem 0;
+    }
+    .link {
+        padding: 0 1rem;
+    }
+}

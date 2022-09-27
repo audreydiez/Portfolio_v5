@@ -28,3 +28,52 @@ h1 {
     padding: 0;
     margin: 0;
 }
+
+.link {
+    text-decoration: none;
+    position: relative;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+.link:after {
+    position: absolute;
+    content: '';
+    height: 3.5px;
+    bottom: -8px;
+
+    margin: 0 auto;
+    left: 0;
+    width: 0;
+    background: linear-gradient(
+        to top left,
+        var(--link-gradient-1-color) 0%,
+        var(--link-gradient-2-color) 100%
+    );
+
+    transition: 0.3s;
+}
+.link:hover:after {
+    width: 100%;
+    background: linear-gradient(
+        to top left,
+        var(--link-gradient-1-color) 0%,
+        var(--link-gradient-2-color) 100%
+    );
+}
+.link.active {
+    &:after {
+        position: absolute;
+        content: '';
+        height: 3.5px;
+        bottom: -8px;
+
+        margin: 0 auto;
+        left: 0;
+        width: 100%;
+        background: linear-gradient(
+            to top left,
+            var(--link-gradient-1-color) 0%,
+            var(--link-gradient-2-color) 100%
+        );
+    }
+}

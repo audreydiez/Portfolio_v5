@@ -1,0 +1,11 @@
+.footer {
+    width: 100%;
+    height: 100px;
+    &__h2 {
+        font-size: 2.4rem;
+        font-weight: 700;
+        margin-bottom: 4rem;
+        padding: 0;
+        text-align: center;
+    }
+}
