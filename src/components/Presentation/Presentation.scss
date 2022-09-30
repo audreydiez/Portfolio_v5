@@ -1,7 +1,7 @@
 .presentation {
     box-sizing: border-box;
     width: 100%;
-    height: auto;
+    height: calc(55vh - 10rem);
 
     display: flex;
     flex-direction: column;
@@ -12,6 +12,11 @@
     color: var(--font-color);
 
     margin-top: 6rem;
+
+    @media screen and(max-width: 992px) {
+        margin-top: 3rem;
+        height: auto;
+    }
 
     &__bloc {
         width: 80%;
@@ -144,6 +149,11 @@
                 border: 6px solid var(--navbar-bg-color);
                 overflow: hidden;
                 box-shadow: 0 4px 30px rgba(0, 0, 0, 0.2);
+
+                @media screen and(max-width: 992px) {
+                    width: 200px;
+                    height: 200px;
+                }
 
                 @media screen and(max-width: 550px) {
                     width: 180px;

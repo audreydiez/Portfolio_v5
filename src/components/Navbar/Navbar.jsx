@@ -1,7 +1,7 @@
 import './Navbar.scss'
 import React from 'react'
-import { ReactComponent as Logo } from 'assets/images/logo.svg'
-import { ReactComponent as Logo2 } from 'assets/images/logo_gradient.svg'
+
+import { ReactComponent as Logo } from 'assets/images/logo_gradient.svg'
 import Darkmode from 'components/Darkmode/Darkmode'
 
 const Navbar = () => {
@@ -11,7 +11,7 @@ const Navbar = () => {
         <>
             <div className="navbar">
                 <div className="navbar__logo ">
-                    <Logo2 className="navbar__logo__ad svg-ad" />
+                    <Logo className="navbar__logo__ad svg-ad" />
                 </div>
                 <ul className="navbar__links">
                     <li className="navbar__links__list">

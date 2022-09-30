@@ -1,11 +1,35 @@
 .footer {
-    width: 100%;
+    width: calc(100% - 8rem);
     height: 100px;
-    &__h2 {
-        font-size: 2.4rem;
-        font-weight: 700;
-        margin-bottom: 4rem;
-        padding: 0;
-        text-align: center;
+
+    margin: 1rem 4rem;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+    @media screen and(max-width: 550px) {
+        height: 130px;
+    }
+
+    &__col {
+        @media screen and(max-width: 650px) {
+            text-align: center;
+            justify-content: center;
+            width: 100%;
+            line-height: 1.8rem;
+        }
+        &__heart {
+            background: linear-gradient(
+                to top left,
+                var(--link-gradient-1-color) 0%,
+                var(--link-gradient-2-color) 100%
+            );
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
     }
 }

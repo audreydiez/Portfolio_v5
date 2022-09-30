@@ -40,6 +40,10 @@
                 justify-content: center;
                 text-align: center;
                 gap: 2rem;
+
+                @media screen and(max-width: 375px) {
+                    gap: 1rem;
+                }
                 .icon {
                     width: 60px;
                     height: 60px;

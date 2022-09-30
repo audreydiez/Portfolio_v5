@@ -3,6 +3,15 @@
     margin: 3rem 0 0 0;
     padding: 2rem 40px 0 40px;
     text-align: center;
+    height: calc(40vh - 9rem);
+
+    @media screen and(max-width: 992px) {
+        height: calc(20vh - 2rem);
+    }
+
+    @media screen and(max-width: 550px) {
+        height: calc(20vh - 0rem);
+    }
 
     &__container {
         display: flex;
@@ -15,6 +24,13 @@
 
         width: 100%;
 
+        @media screen and(max-width: 550px) {
+            gap: 2rem;
+        }
+        @media screen and(max-width: 375px) {
+            gap: 1rem;
+        }
+
         .icon {
             width: 90px;
             height: 90px;
@@ -24,6 +40,11 @@
             fill: var(--font-color);
             cursor: pointer;
 
+            @media screen and(max-width: 550px) {
+                width: 70px;
+                height: 70px;
+            }
+
             &:hover {
                 fill: url(#gradient);
             }
@@ -31,6 +52,7 @@
     }
     &__p {
         margin: 3rem 0 1rem 0;
+        font-size: 1.4rem;
     }
     .link {
         padding: 0 1rem;
