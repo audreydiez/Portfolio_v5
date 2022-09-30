@@ -14,8 +14,10 @@ const Portfolio = () => {
 
     return (
         <>
-            <section className="portfolio">
-                <h2 className="portfolio__h2">Réalisations</h2>
+            <section className="portfolio" id="portfolio-mobile">
+                <h2 className="portfolio__h2" id="portfolio">
+                    Réalisations
+                </h2>
 
                 <div className="portfolio__filters">
                     <button

@@ -4,8 +4,10 @@ import React from 'react'
 const Methods = () => {
     return (
         <>
-            <section className="methods">
-                <h2 className="methods__h2">Méthodes</h2>
+            <section className="methods" id="methods-mobile">
+                <h2 className="methods__h2" id="methods">
+                    Méthodes
+                </h2>
                 <div className="methods__container">
                     <article className="methods__container__card">
                         <h3 className="methods__container__card__h3">1. Etude de vos besoins</h3>

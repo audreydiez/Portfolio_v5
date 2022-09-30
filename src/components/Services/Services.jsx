@@ -10,9 +10,9 @@ import { ReactComponent as Seo } from 'assets/images/seo.svg'
 const Services = () => {
     return (
         <>
-            <section className="services">
+            <section className="services" id="services-mobile">
                 <h2 className="services__h2">Services</h2>
-                <p className="services__p">
+                <p className="services__p" id="services">
                     Spécialiste en développement web et SEO, pour particuliers et professionnels.{' '}
                 </p>
                 <p className="services__p">

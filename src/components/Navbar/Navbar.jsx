@@ -1,5 +1,6 @@
 import './Navbar.scss'
 import React from 'react'
+import { Link } from 'react-scroll'
 
 import { ReactComponent as Logo } from 'assets/images/logo_gradient.svg'
 import Darkmode from 'components/Darkmode/Darkmode'
@@ -15,29 +16,53 @@ const Navbar = () => {
                 </div>
                 <ul className="navbar__links">
                     <li className="navbar__links__list">
-                        <a className="a-navbar a-navbar-effect" href="#works">
+                        <Link
+                            className="a-navbar a-navbar-effect"
+                            activeClass="active"
+                            to="services"
+                            spy={true}
+                            smooth={true}
+                            offset={-100}
+                            duration={500}>
                             Services
-                        </a>
+                        </Link>
                     </li>
                     <li className="navbar__links__list">
-                        <a className="a-navbar a-navbar-effect" href="#works">
+                        <Link
+                            className="a-navbar a-navbar-effect"
+                            activeClass="active"
+                            to="methods"
+                            spy={true}
+                            smooth={true}
+                            offset={-100}
+                            duration={500}>
                             Méthodes
-                        </a>
+                        </Link>
                     </li>
                     <li className="navbar__links__list">
-                        <a className="a-navbar a-navbar-effect" href="#about">
+                        <Link
+                            className="a-navbar a-navbar-effect"
+                            activeClass="active"
+                            to="portfolio"
+                            spy={true}
+                            smooth={true}
+                            offset={-100}
+                            duration={500}>
                             Réalisations
-                        </a>
+                        </Link>
                     </li>
-                    {/* <li className="navbar__links__list">
-                        <a className="a-navbar a-navbar-effect" href="#contact">
-                            Blog
-                        </a>
-                    </li> */}
+
                     <li className="navbar__links__list">
-                        <a className="a-navbar a-navbar-effect" href="#contact">
+                        <Link
+                            className="a-navbar a-navbar-effect"
+                            activeClass="active"
+                            to="contact"
+                            spy={true}
+                            smooth={true}
+                            offset={-100}
+                            duration={500}>
                             Contact
-                        </a>
+                        </Link>
                     </li>
                 </ul>
                 <Darkmode></Darkmode>
@@ -63,32 +88,56 @@ const Navbar = () => {
                 }>
                 <ul className="navbar__mobile__inner">
                     <li className="navbar__mobile__inner__list">
-                        <a
-                            href="#works"
-                            className="navbar__mobile__inner__list__gradient a-navbar a-navbar-effect">
+                        <Link
+                            className="navbar__mobile__inner__list__gradient a-navbar a-navbar-effect"
+                            activeClass="active"
+                            to="services-mobile"
+                            spy={true}
+                            smooth={true}
+                            offset={-100}
+                            duration={500}
+                            onClick={() => setBurgerAnime('static')}>
                             Services
-                        </a>
+                        </Link>
                     </li>
                     <li className="navbar__mobile__inner__list">
-                        <a
-                            href="#works"
-                            className="navbar__mobile__inner__list__gradient a-navbar a-navbar-effect">
+                        <Link
+                            className="navbar__mobile__inner__list__gradient a-navbar a-navbar-effect"
+                            activeClass="active"
+                            to="methods-mobile"
+                            spy={true}
+                            smooth={true}
+                            offset={-100}
+                            duration={500}
+                            onClick={() => setBurgerAnime('static')}>
                             Méthodes
-                        </a>
+                        </Link>
                     </li>
                     <li className="navbar__mobile__inner__list">
-                        <a
-                            href="#about"
-                            className="navbar__mobile__inner__list__gradient a-navbar a-navbar-effect">
+                        <Link
+                            className="navbar__mobile__inner__list__gradient a-navbar a-navbar-effect"
+                            activeClass="active"
+                            to="portfolio-mobile"
+                            spy={true}
+                            smooth={true}
+                            offset={-100}
+                            duration={500}
+                            onClick={() => setBurgerAnime('static')}>
                             Réalisations
-                        </a>
+                        </Link>
                     </li>
                     <li className="navbar__mobile__inner__list">
-                        <a
-                            href="#works"
-                            className="navbar__mobile__inner__list__gradient a-navbar a-navbar-effect">
+                        <Link
+                            className="navbar__mobile__inner__list__gradient a-navbar a-navbar-effect"
+                            activeClass="active"
+                            to="contact-mobile"
+                            spy={true}
+                            smooth={true}
+                            offset={-100}
+                            duration={500}
+                            onClick={() => setBurgerAnime('static')}>
                             Contact
-                        </a>
+                        </Link>
                     </li>
                 </ul>
             </div>

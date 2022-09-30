@@ -6,8 +6,10 @@ import { ReactComponent as Git } from 'assets/images//icons/git.svg'
 
 const Contact = () => {
     return (
-        <section className="contact">
-            <h2 className="contact__h2">Contact</h2>
+        <section className="contact" id="contact-mobile">
+            <h2 className="contact__h2" id="contact">
+                Contact
+            </h2>
             <div className="contact__container">
                 <article className="contact__container__card">
                     <h3 className="contact__container__card__title">Sur les réseaux</h3>

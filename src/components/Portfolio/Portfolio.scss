@@ -22,10 +22,12 @@
             padding: 1rem 1rem;
             cursor: pointer;
             border: none;
+            background-color: transparent;
             &__inner {
                 text-decoration: none;
                 position: relative;
                 font-size: 1.1rem;
+                color: var(--font-color);
             }
             &__inner:after {
                 position: absolute;
