@@ -21,8 +21,8 @@ function App() {
                 {/* <Bubbles /> */}
             </div>
             <div className="wrapper">
-                <Navbar></Navbar>
-                <Presentation></Presentation>
+                <Navbar />
+                <Presentation />
                 <Network />
                 <Services />
                 <Methods />

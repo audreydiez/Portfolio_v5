@@ -9,6 +9,19 @@ const PortfolioCard = (props) => {
                     <article className="portfolio-card__container" key={key}>
                         <div className="portfolio-card__container__img">
                             <img src={project.thumbnail} alt={project.name} />
+                            {project.link.length > 0 ? (
+                                <div className="portfolio-card__container__img__go">
+                                    <a
+                                        className="a-navbar a-navbar-effect a-navbar-card"
+                                        href={project.link}
+                                        rel="noopener noreferrer"
+                                        target="_blank">
+                                        Voir le projet
+                                    </a>
+                                </div>
+                            ) : (
+                                ''
+                            )}
                         </div>
                         <h3 className="portfolio-card__container__title">
                             {project.title01} {project.title02}

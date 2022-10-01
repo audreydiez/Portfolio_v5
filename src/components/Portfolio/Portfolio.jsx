@@ -18,6 +18,7 @@ const Portfolio = () => {
                 <h2 className="portfolio__h2" id="portfolio">
                     Réalisations
                 </h2>
+                <p>(Une petite partie)</p>
 
                 <div className="portfolio__filters">
                     <button
@@ -37,7 +38,7 @@ const Portfolio = () => {
                             className={`portfolio__filters__filter__inner ${
                                 activedCat === 'website' ? 'active' : ''
                             }`}>
-                            Sites internet
+                            Sites internet / blogs
                         </span>
                     </button>
                     <button
@@ -57,7 +58,7 @@ const Portfolio = () => {
                             className={`portfolio__filters__filter__inner ${
                                 activedCat === 'design' ? 'active' : ''
                             }`}>
-                            Design & Vidéos
+                            UX / UI / graphisme
                         </span>
                     </button>
                 </div>

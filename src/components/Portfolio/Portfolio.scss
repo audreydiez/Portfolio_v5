@@ -7,9 +7,12 @@
     &__h2 {
         font-size: 2.4rem;
         font-weight: 700;
-        margin-bottom: 4rem;
+        margin-bottom: 0rem;
         padding: 0;
         text-align: center;
+    }
+    & > p {
+        padding-bottom: 3rem;
     }
     &__filters {
         display: flex;

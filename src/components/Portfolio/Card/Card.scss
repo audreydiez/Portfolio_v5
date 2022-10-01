@@ -45,6 +45,7 @@
         }
 
         &__img {
+            position: relative;
             width: 100%;
             height: 280px;
 
@@ -58,7 +59,30 @@
             &:hover {
                 transform: translateY(-5px);
                 box-shadow: 0 4px 30px rgba(0, 0, 0, 0.2);
+                .portfolio-card__container__img__go {
+                    opacity: 1;
+                }
             }
+
+            &__go {
+                position: absolute;
+                top: 0;
+                right: 0;
+                width: 100%;
+                height: 100%;
+                z-index: 1;
+                opacity: 0;
+                background-color: rgba(0, 0, 0, 0.8);
+                transition: all 300ms ease-in-out;
+
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                align-items: center;
+                color: #fff;
+                font-size: 1.1rem;
+            }
+
             img {
                 width: 100%;
                 height: 100%;
@@ -76,5 +100,12 @@
     to {
         opacity: 1;
         left: 0px;
+    }
+}
+
+.a-navbar-card {
+    color: #fff;
+    &:hover {
+        color: #fff;
     }
 }
