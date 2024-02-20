@@ -9,7 +9,7 @@ const Footer = () => {
                 <Logo className="navbar__logo__ad svg-ad" />
             </div>
             <div className="footer__col">
-                © 2022 - SIRET 78979458300037 - Depuis 2012{' '}
+                © 2024 - SIRET 78979458300037 - Depuis 2012{' '}
                 <span className="footer__col__heart">&hearts;</span>{' '}
             </div>
         </section>
