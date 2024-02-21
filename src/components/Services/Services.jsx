@@ -43,8 +43,8 @@ const Services = () => {
                         <Wordpress className="services__container__card__icon" />
                         <h3 className="services__container__card__h3">Blogs Wordpress</h3>
                         <p className="services__container__card__descr">
-                            Installation de thèmes ou création complète, mise à jour, ajout de
-                            fonctionnalités & personalisation complète du blog selon les besoins.
+                            Installation de thèmes ou création, mise à jour, ajout de
+                            fonctionnalités & personalisation complète du blog.
                         </p>
                     </article>
                     <article className="services__container__card">
@@ -69,7 +69,7 @@ const Services = () => {
                         <Formation className="services__container__card__icon" />
                         <h3 className="services__container__card__h3">Mentorat & formation</h3>
                         <p className="services__container__card__descr">
-                            Mentorat & cours lors de vos parcours et vos formations professionnelles
+                            Mentorat & cours lors de vos formations professionnelles
                             pour vous aider à atteindre vos objectifs d'apprentissage ou de
                             reconversion.
                         </p>
